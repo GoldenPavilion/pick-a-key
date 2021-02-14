@@ -120,7 +120,7 @@ class PickAKey::Scraper
         @names[1].each do |name|          
          @keys_info["minor"][:"#{name}"] = {
              :notes => @notes[1][@keys_info["minor"].length],
-             :relative_fifth => @notes[1][@keys_info["minor"].length].split(" ")[8].downcase+" minor",
+             :relative_fifth => @notes[1][@keys_info["minor"].length].split(" ")[8]+" minor",
              :relative_major => @notes[1][@keys_info["minor"].length].split(" ")[4]+" Major",
              :chords => @minor_chords[@keys_info["minor"].length]
         }
@@ -155,7 +155,7 @@ class PickAKey::Scraper
             :relative_fifth => @notes[0][user_notes_index.to_i].split(" ")[8]+" Major",
             :relative_minor => @notes[0][user_notes_index.to_i].split(" ")[10]+" minor",
             :chords => @user_input_chords
-     }   
+     } 
          end 
        @key = PickAKey::Key.new(@user_key_info)
        PickAKey::CLI.current_key = @key 

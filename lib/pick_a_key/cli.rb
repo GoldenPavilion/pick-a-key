@@ -1,5 +1,6 @@
 require './lib/pick_a_key'
-require 'prettyprint'
+require 'prettyprint
+'
 
 
 class PickAKey::CLI
