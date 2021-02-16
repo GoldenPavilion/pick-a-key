@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
-require_relative './lib/pick_a_key'
+require './lib/pick_a_key'
 
 PickAKey::CLI.new.start

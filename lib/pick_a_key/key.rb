@@ -1,6 +1,3 @@
-require './lib/pick_a_key'
-
-
 class PickAKey::Key
 
     attr_accessor :type, :name, :notes, :chords, :relative_fifth, :relative_minor, :hash, :popular_chord_progressions

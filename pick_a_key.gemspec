@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "pick_a_key"
   spec.version       = PickAKey::VERSION
   spec.authors       = ["Taylor Treece"]
-  spec.email         = ["xxxxxxxx.com"]
+  spec.email         = ["tayloratreece@gmail.com"]
 
   spec.summary       = "The Pick-a-Key gem allows you to quickly find relevant information on music theory, specifically relating to Major and Minor keys."
   spec.description   = "When started, the gem lists all available Major and minor keys, and then prompts you to make a selection. Once selected, a key object is made a available to the user. The attributes related to the key object are :Type (Major or minor), :Name (e.g. C Major ), :Notes (all notes in the listed key), :Chords (all chords in listed key), :Relative_fifth, :Relative_Major/:Relative_minor. The user also has the option of having a single random chord progression returned to them in a key of their choice, or an entire song written in the key of their choice."
@@ -23,9 +23,9 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{\A(?:test|spec|features)/}) }
   end
-  #spec.bindir        = "exe"
+  spec.bindir        = "exe"
   spec.executables   = ["pick-a-key"]
-  #spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.add_development_dependency "pry"
   spec.add_dependency "nokogiri"
